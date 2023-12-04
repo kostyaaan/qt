@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2"/>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>771</width>
+      <height>101</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_Open"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Навигация</string>
+    </property>
+    <addaction name="action_Play"/>
+    <addaction name="action_Stop"/>
+    <addaction name="action_Back"/>
+    <addaction name="action_Forward"/>
+    <addaction name="Rate_Fast"/>
+    <addaction name="Rate_Slow"/>
+    <addaction name="setFullScreen"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>96</width>
+     <height>48</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Back"/>
+   <addaction name="action_Play"/>
+   <addaction name="action_Stop"/>
+   <addaction name="action_Forward"/>
+   <addaction name="setFullScreen"/>
+   <addaction name="action_Mute"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+  </widget>
+  <action name="action_Open">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Quit">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_Play">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/png/002-play-button.png</normaloff>:/new/prefix1/png/002-play-button.png</iconset>
+   </property>
+   <property name="text">
+    <string>Воспроизведение</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_Stop">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/png/001-pause.png</normaloff>:/new/prefix1/png/001-pause.png</iconset>
+   </property>
+   <property name="text">
+    <string>Остановить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+K</string>
+   </property>
+  </action>
+  <action name="action_Back">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/png/004-rewind.png</normaloff>:/new/prefix1/png/004-rewind.png</iconset>
+   </property>
+   <property name="text">
+    <string>Назад</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action_Forward">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/png/003-fast-forward.png</normaloff>:/new/prefix1/png/003-fast-forward.png</iconset>
+   </property>
+   <property name="text">
+    <string>Вперед</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="action_Mute">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/png/001-speaker.png</normaloff>:/new/prefix1/png/001-speaker.png</iconset>
+   </property>
+   <property name="text">
+    <string>Отключить звук</string>
+   </property>
+  </action>
+  <action name="Rate_Fast">
+   <property name="text">
+    <string>Быстрее</string>
+   </property>
+  </action>
+  <action name="Rate_Slow">
+   <property name="text">
+    <string>Медленнее</string>
+   </property>
+  </action>
+  <action name="setFullScreen">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/new/prefix1/png/001-fullscreen.png</normaloff>:/new/prefix1/png/001-fullscreen.png</iconset>
+   </property>
+   <property name="text">
+    <string>На весь экран</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

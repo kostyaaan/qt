@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>png/001-pause.png</file>
+        <file>png/002-play-button.png</file>
+        <file>png/003-fast-forward.png</file>
+        <file>png/004-rewind.png</file>
+        <file>png/001-speaker.png</file>
+        <file>png/001-fullscreen.png</file>
+    </qresource>
+</RCC>
