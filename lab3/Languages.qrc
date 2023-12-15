@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Languages"/>
+    <qresource prefix="/">
+        <file>QReader_en.qm</file>
+    </qresource>
+</RCC>

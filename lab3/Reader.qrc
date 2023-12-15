@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>assets/icons/copy.png</file>
+        <file>assets/icons/cut.png</file>
+        <file>assets/icons/new.png</file>
+        <file>assets/icons/open.png</file>
+        <file>assets/icons/paste.png</file>
+        <file>assets/icons/save.png</file>
+        <file>assets/icons/textedit/checkbox.png</file>
+        <file>assets/icons/textedit/checkbox-checked.png</file>
+        <file>assets/icons/textedit/editcopy.png</file>
+        <file>assets/icons/textedit/editcut.png</file>
+        <file>assets/icons/textedit/editpaste.png</file>
+        <file>assets/icons/textedit/editredo.png</file>
+        <file>assets/icons/textedit/editundo.png</file>
+        <file>assets/icons/textedit/exportpdf.png</file>
+        <file>assets/icons/textedit/filenew.png</file>
+        <file>assets/icons/textedit/fileopen.png</file>
+        <file>assets/icons/textedit/fileprint.png</file>
+        <file>assets/icons/textedit/filesave.png</file>
+        <file>assets/icons/textedit/format-indent-less.png</file>
+        <file>assets/icons/textedit/format-indent-more.png</file>
+        <file>assets/icons/textedit/textbold.png</file>
+        <file>assets/icons/textedit/textcenter.png</file>
+        <file>assets/icons/textedit/textitalic.png</file>
+        <file>assets/icons/textedit/textjustify.png</file>
+        <file>assets/icons/textedit/textleft.png</file>
+        <file>assets/icons/textedit/textright.png</file>
+        <file>assets/icons/textedit/textunder.png</file>
+        <file>assets/icons/textedit/textundercolor.png</file>
+        <file>assets/icons/textedit/zoomin.png</file>
+        <file>assets/icons/textedit/zoomout.png</file>
+    </qresource>
+</RCC>
